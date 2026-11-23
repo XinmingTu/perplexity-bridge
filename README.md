@@ -1,7 +1,13 @@
 # Open models on OpenAI's perplexity chart
 
 In November 2026 OpenAI published base-model log-perplexities for its own models, from GPT-3.5 to GPT-6.2 Astra,
-on an internal code set ([Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/)). This repository places 2026's open models on the same chart.
+on an internal code set ([Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/)).
+This repository places 2026's open models on the same chart, and includes everything behind it:
+
+- the charts, in `figures/`;
+- the numbers in them: bits and bytes for every model on every document, in `results/per_doc/`;
+- every token's log-probability for every model, in `results/docs/` (format below);
+- the 391 transcripts the models read, and the code that scored them.
 
 ![Open models on OpenAI's base-model log-perplexity chart](figures/openai_axis_projection_with_gpt35.png)
 
@@ -66,8 +72,24 @@ uv run python scripts/export_per_doc.py                     # refresh results/pe
 | `data/corpus/truth/fresh.jsonl` | the 391 transcripts (311 spontaneous questions, 80 prepared) |
 | `data/anchors/` | OpenAI's published values and MAI's published tables |
 | `results/per_doc/` | one CSV per model: bits and bytes for every document |
+| `results/docs/truth/fresh/` | one gzipped JSONL per model: every token's log-probability for every document |
 | `figures/` | the charts |
 | `docs/literature/` | annotated reading lists |
+
+### Per-token files
+
+Each line of `results/docs/truth/fresh/<model>.jsonl.gz` is one document:
+
+| Field | Meaning |
+|---|---|
+| `doc_id`, `source`, `kind` | the document in `data/corpus/truth/fresh.jsonl`, its parliament, and the kind of proceeding |
+| `offsets` | each token's start, as a character index into the document's rendered text (`Document.render()`) |
+| `logprobs` | each token's natural-log probability given everything before it; the first token is never scored (0) |
+| `bits`, `bytes` | the document's total, as in `results/per_doc/` |
+| `bits_speech`, `bytes_speech` | the same without speaker-label tokens |
+
+Tokens are each model's own, so offsets differ between models. If a document appears more than once, the last line
+is the one used.
 
 Transcripts: UK House of Commons Hansard (Open Parliament Licence v3.0) and House of Commons of Canada debates via
 openparliament.ca. Anchor values: OpenAI's

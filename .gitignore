@@ -6,5 +6,5 @@ __pycache__/
 cache/
 # Earlier experiments and run logs, kept locally only
 _archive/
-# Full per-token log-probabilities (~220 MB); results/per_doc/ has the per-document summaries
-results/docs/
+# Backups kept by scripts/rescore_anomalies.py before re-scoring
+results/docs/**/*.orig.gz
