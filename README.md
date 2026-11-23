@@ -8,19 +8,17 @@ The open models are tested on spontaneous questions asked by real people in the 
 October and November 2026. Off-the-cuff speech is not AI-written, and all of it comes after every model's training
 cutoff, so no model can have seen it.
 
-![Open models on OpenAI's base-model log-perplexity chart](figures/openai_axis_projection_with_gpt35.png)
-
-## How
-
 OpenAI's test set is private, so open models get onto its chart through two bridges:
 
-1. **Microsoft AI.** MAI-Base-1 and MAI-Base-2 have scores on OpenAI's test set and on Microsoft AI's own test sets,
-   where open models are scored too. That links Microsoft AI's scale to OpenAI's.
-2. **Parliament questions.** Every open model is scored on UK and Canadian parliament questions from Oct–Nov 2026.
-   Kimi K3 and Qwen 3.8 also appear in Microsoft AI's table, which links this scale to theirs.
+1. **Parliament questions.** Every open model is scored on these questions. Kimi K3 and Qwen 3.8 also appear in
+   Microsoft AI's published table, which links this scale to Microsoft AI's.
+2. **Microsoft AI.** MAI-Base-1 and MAI-Base-2 have scores on both Microsoft AI's test set and OpenAI's, which links
+   Microsoft AI's scale to OpenAI's.
 
 Each model reads every document in full and is scored on every token, in bits per byte, so models with different
 tokenizers compare fairly.
+
+![Open models on OpenAI's base-model log-perplexity chart](figures/openai_axis_projection_with_gpt35.png)
 
 On the parliament questions alone, before any bridging, bigger open models do better:
 
