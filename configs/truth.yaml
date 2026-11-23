@@ -1,0 +1,21 @@
+# The run behind every chart: UK and Canadian House of Commons transcripts from Oct 1 to Nov 20, 2026, after every
+# scored model's training cutoff. Spontaneous questions are the headline tier; prepared speech is a cross-check.
+name: truth
+seed: 2026
+windows:
+  fresh: {start: "2026-10-01", end: "2026-11-20"}
+sources: [uk_commons, canada_commons]
+tiers:
+  spontaneous: [oral_questions, urgent_question]
+  prepared: [debate, statement, business, petition]
+docs_per_source: {spontaneous: 200, prepared: 40}
+# Whole-document scoring (every token): the standard perplexity measurement.
+doc_models:
+  fireworks: [kimi-k3, kimi-k3p1-pro, ember-1, glm-5p3, glm-5p3-flash, minimax-m3, minimax-m3p1-flash, qwen3p8-max,
+              nemotron-3-ultra-nvfp4, nemotron-lightning-3p5-30b-a3b, muse-spark-open]
+  tinker: [Qwen/Qwen3-8B, Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.5-9B-Base, Qwen/Qwen3.5-35B-A3B-Base,
+           Qwen/Qwen3.5-397B-A17B, Qwen/Qwen3.6-35B-A3B, Qwen/Qwen3.8-27B, moonshotai/Kimi-K2.6,
+           nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16, nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,
+           nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16, openai/gpt-oss-120b, openai/gpt-oss-20b,
+           thinkingmachines/Inkling, thinkingmachines/Inkling-Small, thinkingmachines/Inkling-2-Mini,
+           thinkingmachines/Inkling-2-Small]

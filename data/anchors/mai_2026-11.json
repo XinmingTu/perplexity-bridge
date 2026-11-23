@@ -1,0 +1,11 @@
+{
+  "source": "Microsoft AI, 'Frontier Pre-training at Microsoft AI' (Oct 2026), Figure 1, https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/ ; OpenAI-set log-perplexities from Microsoft AI's post of 2026-11-23 (chart: MAI-1 Base 0.878, MAI-2 Base 0.819, same tokenizer as OpenAI).",
+  "openai_logppl": {"MAI-Base-1": 0.878, "MAI-Base-2": 0.819},
+  "bpb": {
+    "code": {"MAI-Base-1": 0.2401, "MiMo-V2.6-Pro-RL": 0.2446, "Qwen3.8": 0.2400, "DeepSeek-V4-Pro-Base": 0.2370, "Kimi-K3": 0.2264, "MAI-Base-2": 0.2203},
+    "qa":   {"MAI-Base-1": 0.4440, "MiMo-V2.6-Pro-RL": 0.4513, "Qwen3.8": 0.4427, "DeepSeek-V4-Pro-Base": 0.4351, "Kimi-K3": 0.4269, "MAI-Base-2": 0.4162},
+    "stem": {"MAI-Base-1": 0.4026, "MiMo-V2.6-Pro-RL": 0.3975, "Qwen3.8": 0.3978, "DeepSeek-V4-Pro-Base": 0.3968, "Kimi-K3": 0.3761, "MAI-Base-2": 0.3653},
+    "math": {"MAI-Base-1": 0.3939, "MiMo-V2.6-Pro-RL": 0.3803, "Qwen3.8": 0.3752, "DeepSeek-V4-Pro-Base": 0.3862, "Kimi-K3": 0.3589, "MAI-Base-2": 0.3561}
+  },
+  "notes": "Kimi K3, Qwen3.8-2.4T-A95B and MiMo-V2.6-Pro-RL are post-trained checkpoints in MAI's comparison."
+}

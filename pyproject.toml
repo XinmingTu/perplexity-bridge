@@ -1,0 +1,39 @@
+[project]
+name = "perplexity-bridge"
+version = "0.1.0"
+description = "Open models on OpenAI's base-model log-perplexity chart, bridged through Microsoft AI's models and fresh parliament speech"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "httpx>=0.28",
+    "numpy>=2.0",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "tinker>=0.39",
+]
+
+[project.optional-dependencies]
+# tokenizers for models whose Tinker sampler has none, and for Modal runs
+local = ["transformers>=4.57"]
+plots = ["matplotlib>=3.9"]
+gpu = ["modal>=1.0"]
+
+[project.scripts]
+cb = "cbridge.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "cbridge"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120

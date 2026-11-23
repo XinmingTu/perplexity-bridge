@@ -1,0 +1,15 @@
+openai_label,month,log_perplexity,milestone
+GPT-3.5,March 2022,0.986,Fluent conversation
+GPT-4,March 2023,0.913,Benefits from thinking before answering
+GPT-4 Turbo,November 2023,0.909,
+GPT-4o / o1,May 2024,0.904,
+GPT-4.5,February 2025,0.876,
+GPT-4.1 / o3,April 2025,0.902,
+GPT-5 / 5.1,August 2025,0.893,
+GPT-5.2,December 2025,0.888,
+GPT-5.3-Codex / 5.4,February 2026,0.871,Useful coder
+GPT-5.5,April 2026,0.848,
+GPT-5.6 Sol,July 2026,0.828,Cybersecurity expert
+GPT-6 Astra,September 2026,0.783,
+GPT-6.2 Astra,November 2026,0.761,Solved a Millennium Prize math problem
+Internal model,November 2026,0.732,

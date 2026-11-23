@@ -1,0 +1,338 @@
+{
+ "Kimi K3": {
+  "our_bpb": 0.5086,
+  "raw_instruct": {
+   "code": 0.8372,
+   "qa": 0.8417,
+   "stem": 0.8361,
+   "math": 0.8234
+  },
+  "base_equivalent": {
+   "code": 0.821,
+   "qa": 0.8199,
+   "stem": 0.8218,
+   "math": 0.8099
+  },
+  "factor": 1.0246
+ },
+ "Kimi K3.1 Pro": {
+  "our_bpb": 0.5093,
+  "raw_instruct": {
+   "code": 0.8377,
+   "qa": 0.8421,
+   "stem": 0.8365,
+   "math": 0.8237
+  },
+  "base_equivalent": {
+   "code": 0.8215,
+   "qa": 0.8203,
+   "stem": 0.8222,
+   "math": 0.8102
+  },
+  "factor": 1.0246
+ },
+ "Kimi K2.6": {
+  "our_bpb": 0.5488,
+  "raw_instruct": {
+   "code": 0.8661,
+   "qa": 0.8657,
+   "stem": 0.8606,
+   "math": 0.8415
+  },
+  "base_equivalent": {
+   "code": 0.8492,
+   "qa": 0.8433,
+   "stem": 0.8457,
+   "math": 0.8276
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.8 (2.4T)": {
+  "our_bpb": 0.5648,
+  "raw_instruct": {
+   "code": 0.8777,
+   "qa": 0.8752,
+   "stem": 0.8704,
+   "math": 0.8488
+  },
+  "base_equivalent": {
+   "code": 0.8605,
+   "qa": 0.8527,
+   "stem": 0.8553,
+   "math": 0.8347
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.5 397B": {
+  "our_bpb": 0.5801,
+  "raw_instruct": {
+   "code": 0.8887,
+   "qa": 0.8843,
+   "stem": 0.8797,
+   "math": 0.8557
+  },
+  "base_equivalent": {
+   "code": 0.8712,
+   "qa": 0.8615,
+   "stem": 0.8643,
+   "math": 0.8414
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.8 27B": {
+  "our_bpb": 0.6417,
+  "raw_instruct": {
+   "code": 0.9331,
+   "qa": 0.921,
+   "stem": 0.9173,
+   "math": 0.8836
+  },
+  "base_equivalent": {
+   "code": 0.9145,
+   "qa": 0.8974,
+   "stem": 0.901,
+   "math": 0.8687
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.6 35B-A3B": {
+  "our_bpb": 0.6402,
+  "raw_instruct": {
+   "code": 0.932,
+   "qa": 0.9202,
+   "stem": 0.9164,
+   "math": 0.8829
+  },
+  "base_equivalent": {
+   "code": 0.9135,
+   "qa": 0.8965,
+   "stem": 0.9001,
+   "math": 0.868
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.5 9B": {
+  "our_bpb": 0.6716,
+  "raw_instruct": {
+   "code": 0.9546,
+   "qa": 0.9389,
+   "stem": 0.9355,
+   "math": 0.8971
+  },
+  "base_equivalent": {
+   "code": 0.9356,
+   "qa": 0.9148,
+   "stem": 0.9188,
+   "math": 0.8818
+  },
+  "factor": 1.0246
+ },
+ "Qwen 3.5 4B": {
+  "our_bpb": 0.719,
+  "raw_instruct": {
+   "code": 0.9887,
+   "qa": 0.9671,
+   "stem": 0.9644,
+   "math": 0.9185
+  },
+  "base_equivalent": {
+   "code": 0.9689,
+   "qa": 0.9423,
+   "stem": 0.947,
+   "math": 0.9028
+  },
+  "factor": 1.0246
+ },
+ "GLM-5.3": {
+  "our_bpb": 0.576,
+  "raw_instruct": {
+   "code": 0.8857,
+   "qa": 0.8819,
+   "stem": 0.8772,
+   "math": 0.8539
+  },
+  "base_equivalent": {
+   "code": 0.8683,
+   "qa": 0.8591,
+   "stem": 0.8619,
+   "math": 0.8397
+  },
+  "factor": 1.0246
+ },
+ "GLM-5.3 Flash": {
+  "our_bpb": 0.5655,
+  "raw_instruct": {
+   "code": 0.8781,
+   "qa": 0.8756,
+   "stem": 0.8708,
+   "math": 0.8491
+  },
+  "base_equivalent": {
+   "code": 0.8609,
+   "qa": 0.853,
+   "stem": 0.8557,
+   "math": 0.835
+  },
+  "factor": 1.0246
+ },
+ "Nemotron 3 Ultra": {
+  "our_bpb": 0.5638,
+  "raw_instruct": {
+   "code": 0.8769,
+   "qa": 0.8746,
+   "stem": 0.8698,
+   "math": 0.8483
+  },
+  "base_equivalent": {
+   "code": 0.8598,
+   "qa": 0.852,
+   "stem": 0.8546,
+   "math": 0.8343
+  },
+  "factor": 1.0246
+ },
+ "Nemotron 3 Super": {
+  "our_bpb": 0.5974,
+  "raw_instruct": {
+   "code": 0.9011,
+   "qa": 0.8946,
+   "stem": 0.8903,
+   "math": 0.8635
+  },
+  "base_equivalent": {
+   "code": 0.8834,
+   "qa": 0.8716,
+   "stem": 0.8747,
+   "math": 0.8491
+  },
+  "factor": 1.0246
+ },
+ "Nemotron 3.5 Super": {
+  "our_bpb": 0.5881,
+  "raw_instruct": {
+   "code": 0.8944,
+   "qa": 0.8891,
+   "stem": 0.8846,
+   "math": 0.8593
+  },
+  "base_equivalent": {
+   "code": 0.8768,
+   "qa": 0.8662,
+   "stem": 0.8691,
+   "math": 0.845
+  },
+  "factor": 1.0246
+ },
+ "Nemotron Lightning 30B": {
+  "our_bpb": 0.6553,
+  "raw_instruct": {
+   "code": 0.9428,
+   "qa": 0.9291,
+   "stem": 0.9256,
+   "math": 0.8897
+  },
+  "base_equivalent": {
+   "code": 0.9241,
+   "qa": 0.9052,
+   "stem": 0.9091,
+   "math": 0.8746
+  },
+  "factor": 1.0246
+ },
+ "MiniMax M3": {
+  "our_bpb": 0.6004,
+  "raw_instruct": {
+   "code": 0.9033,
+   "qa": 0.8964,
+   "stem": 0.8921,
+   "math": 0.8649
+  },
+  "base_equivalent": {
+   "code": 0.8855,
+   "qa": 0.8733,
+   "stem": 0.8765,
+   "math": 0.8504
+  },
+  "factor": 1.0246
+ },
+ "Inkling 1": {
+  "our_bpb": 0.5993,
+  "raw_instruct": {
+   "code": 0.9025,
+   "qa": 0.8957,
+   "stem": 0.8914,
+   "math": 0.8644
+  },
+  "base_equivalent": {
+   "code": 0.8847,
+   "qa": 0.8727,
+   "stem": 0.8758,
+   "math": 0.8499
+  },
+  "factor": 1.0246
+ },
+ "Inkling 2 Small": {
+  "our_bpb": 0.5349,
+  "raw_instruct": {
+   "code": 0.8561,
+   "qa": 0.8574,
+   "stem": 0.8521,
+   "math": 0.8353
+  },
+  "base_equivalent": {
+   "code": 0.8394,
+   "qa": 0.8352,
+   "stem": 0.8374,
+   "math": 0.8215
+  },
+  "factor": 1.0246
+ },
+ "Inkling 2 Mini": {
+  "our_bpb": 0.6287,
+  "raw_instruct": {
+   "code": 0.9237,
+   "qa": 0.9133,
+   "stem": 0.9094,
+   "math": 0.8777
+  },
+  "base_equivalent": {
+   "code": 0.9054,
+   "qa": 0.8898,
+   "stem": 0.8933,
+   "math": 0.8629
+  },
+  "factor": 1.0246
+ },
+ "Muse Spark Open": {
+  "our_bpb": 0.5206,
+  "raw_instruct": {
+   "code": 0.8458,
+   "qa": 0.8489,
+   "stem": 0.8434,
+   "math": 0.8288
+  },
+  "base_equivalent": {
+   "code": 0.8294,
+   "qa": 0.8269,
+   "stem": 0.8289,
+   "math": 0.8152
+  },
+  "factor": 1.0246
+ },
+ "Muse Glimmer 30B": {
+  "our_bpb": 0.5792,
+  "raw_instruct": {
+   "code": 0.888,
+   "qa": 0.8838,
+   "stem": 0.8791,
+   "math": 0.8553
+  },
+  "base_equivalent": {
+   "code": 0.8706,
+   "qa": 0.861,
+   "stem": 0.8638,
+   "math": 0.8411
+  },
+  "factor": 1.0246
+ }
+}
