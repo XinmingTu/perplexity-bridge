@@ -1,7 +1,7 @@
 # Open models on OpenAI's perplexity chart
 
 In November 2026 OpenAI published base-model log-perplexities for its own models, from GPT-3.5 to GPT-6.2 Astra,
-on an internal code set. This repository places 2026's open models on the same chart.
+on an internal code set ([Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/)). This repository places 2026's open models on the same chart.
 
 ![Open models on OpenAI's base-model log-perplexity chart](figures/openai_axis_projection_with_gpt35.png)
 
@@ -70,7 +70,8 @@ uv run python scripts/export_per_doc.py                     # refresh results/pe
 | `docs/literature/` | annotated reading lists |
 
 Transcripts: UK House of Commons Hansard (Open Parliament Licence v3.0) and House of Commons of Canada debates via
-openparliament.ca. Anchor values: OpenAI's "Perplexity and Intelligence" post; Microsoft AI's
+openparliament.ca. Anchor values: OpenAI's
+[Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence/) post; Microsoft AI's
 [Frontier Pre-training](https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/) post and their November
 2026 chart of MAI-Base-1/2 on OpenAI's set; Thinking Machines'
 [Inkling 2 Small](https://thinkingmachines.ai/news/inkling-2-small/) post.
