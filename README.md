@@ -4,6 +4,10 @@ OpenAI's [Perplexity and Intelligence](https://openai.com/index/perplexity-and-i
 log-perplexity of its own models, from GPT-3.5 to GPT-6.2 Astra. This repository puts 2026's open models on the same
 chart.
 
+The open models are tested on spontaneous questions asked by real people in the UK and Canadian parliaments in
+October and November 2026. Off-the-cuff speech is not AI-written, and all of it comes after every model's training
+cutoff, so no model can have seen it.
+
 ![Open models on OpenAI's base-model log-perplexity chart](figures/openai_axis_projection_with_gpt35.png)
 
 ## How
@@ -15,9 +19,8 @@ OpenAI's test set is private, so open models get onto its chart through two brid
 2. **Parliament questions.** Every open model is scored on UK and Canadian parliament questions from Oct–Nov 2026.
    Kimi K3 and Qwen 3.8 also appear in Microsoft AI's table, which links this scale to theirs.
 
-Why parliament questions: they are off-the-cuff, so not AI-written, and they come after every model's training
-cutoff, so no model has seen them. Each model reads every document in full and is scored on every token, in bits per
-byte, so models with different tokenizers compare fairly.
+Each model reads every document in full and is scored on every token, in bits per byte, so models with different
+tokenizers compare fairly.
 
 On the parliament questions alone, before any bridging, bigger open models do better:
 
