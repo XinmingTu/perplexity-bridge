@@ -76,3 +76,14 @@ its MAI code BPB from our measurement misses by 0.023 on OpenAI's axis, within t
 
 Closed models give no token probabilities, so they are not scored. Inverting the size trend to estimate closed models'
 parameter counts was tried and rejected: on MAI's models of known size it was off by 2–5×.
+
+## Files
+
+- `results/per_doc/<model>.csv`: bits and bytes for every document, all the charts need.
+- `results/docs/truth/fresh/<model>.jsonl.gz`: one line per document, with `doc_id`, `source` and `kind` (matching
+  `data/corpus/truth/fresh.jsonl`); `offsets`, each token's start as a character index into the document's rendered
+  text (`Document.render()`); `logprobs`, each token's natural-log probability given everything before it (the first
+  token is never scored and is 0); and the totals `bits`, `bytes`, `bits_speech`, `bytes_speech`. Tokens are each
+  model's own, so offsets differ between models. If a document appears more than once, the last line is the one used.
+- `scripts/`: charts (`plot_*.py`), the bridge check, the per-model report, Modal scoring, re-scoring, and
+  `export_per_doc.py`, which rebuilds `results/per_doc/` from the per-token files.
