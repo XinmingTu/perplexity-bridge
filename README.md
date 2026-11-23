@@ -26,7 +26,7 @@ On the parliament questions alone, before any bridging, bigger open models do be
 
 ## Read with care
 
-- The second bridge rests on two models, so placements are rough: about ±0.025 on OpenAI's chart near those models.
+- The parliament bridge rests on two models (Kimi K3 and Qwen 3.8), so placements are rough: about ±0.025 on OpenAI's chart near those models.
   A model the bridge never saw (MiMo-V2.6-Pro) lands within that.
 - Most open models only come as instruct versions, which predict plain text a little worse than base models. Scores
   are adjusted by the base-vs-instruct gap Thinking Machines reported for Inkling 2 Small.
